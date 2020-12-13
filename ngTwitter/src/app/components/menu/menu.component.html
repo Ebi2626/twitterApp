@@ -1,0 +1,6 @@
+<nav class="d-flex flex-column">
+    <ul class="list-unstyled">
+        <li class="list-unstyled-item" *ngFor="let menuItem of menuMock">
+            <a [routerLink]="menuItem.route" routerLinkActive="text-info" [routerLinkActiveOptions]="{exact: true}"> {{ menuItem.name}}</a></li>
+    </ul>
+</nav>
