@@ -1,0 +1,25 @@
+{
+  "name": "twitterApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run startApi\" \"npm run startFrontend\" ",
+    "startApi": "cd ./api-twitter && npm start",
+    "startFrontend": "cd ./ngTwitter && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebi2626/twitterApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebi2626/twitterApp/issues"
+  },
+  "homepage": "https://github.com/ebi2626/twitterApp#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
