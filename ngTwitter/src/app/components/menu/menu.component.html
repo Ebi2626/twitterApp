@@ -1,6 +1,16 @@
 <nav class="d-flex flex-column">
     <ul class="list-unstyled">
+        <li class="list-unstyled-item">
+            <a [routerLink]="menuMock[0].route">
+                <fa-icon [icon]="twitterIcon" size="lg" class="mr-0"></fa-icon>
+            </a>
+
+        </li>
         <li class="list-unstyled-item" *ngFor="let menuItem of menuMock">
-            <a [routerLink]="menuItem.route" routerLinkActive="text-info" [routerLinkActiveOptions]="{exact: true}"> {{ menuItem.name}}</a></li>
+            <a [routerLink]="menuItem.route" routerLinkActive="text-info" [routerLinkActiveOptions]="{exact: true}">
+                <fa-icon [icon]="menuItem.icon" size="lg"></fa-icon>
+                {{ menuItem.name}} 
+            </a>
+        </li>
     </ul>
 </nav>
